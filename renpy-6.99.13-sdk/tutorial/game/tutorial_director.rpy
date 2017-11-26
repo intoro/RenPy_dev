@@ -45,6 +45,9 @@ label director:
 
     e "Let's add a background. Click the '+' to pick where to add it, then the 'scene' statement and 'washington' for the image. Finally, click 'Add' to add it."
 
+    show eileen happy
+    with dissolve
+
     e "Next, add a sprite. Click '+', then 'show', 'eileen', 'happy', and 'Add'. Once you've added it, dissolve it in by clicking the second '+', then 'with', 'dissolve', and 'Add'."
 
     show eileen happy

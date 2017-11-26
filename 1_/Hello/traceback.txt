@@ -1,0 +1,37 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 16, in script
+    with fade
+IOError: Couldn't find file 'illurock.opus'.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 16, in script
+    with fade
+  File "/home/b/1/9_RenPy/renpy-6.99.13-sdk/renpy/ast.py", line 1289, in execute
+    renpy.exports.with_statement(trans, paired)
+  File "/home/b/1/9_RenPy/renpy-6.99.13-sdk/renpy/exports.py", line 1406, in with_statement
+    return renpy.game.interface.do_with(trans, paired, clear=clear)
+  File "/home/b/1/9_RenPy/renpy-6.99.13-sdk/renpy/display/core.py", line 2123, in do_with
+    clear=clear)
+  File "/home/b/1/9_RenPy/renpy-6.99.13-sdk/renpy/display/core.py", line 2553, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
+  File "/home/b/1/9_RenPy/renpy-6.99.13-sdk/renpy/display/core.py", line 3104, in interact_core
+    renpy.audio.audio.periodic()
+  File "/home/b/1/9_RenPy/renpy-6.99.13-sdk/renpy/audio/audio.py", line 960, in periodic_thread_main
+    periodic_pass()
+  File "/home/b/1/9_RenPy/renpy-6.99.13-sdk/renpy/audio/audio.py", line 917, in periodic_pass
+    c.periodic()
+  File "/home/b/1/9_RenPy/renpy-6.99.13-sdk/renpy/audio/audio.py", line 409, in periodic
+    topf = load(self.file_prefix + filename + self.file_suffix)
+  File "/home/b/1/9_RenPy/renpy-6.99.13-sdk/renpy/audio/audio.py", line 69, in load
+    rv = renpy.loader.load(fn)
+  File "/home/b/1/9_RenPy/renpy-6.99.13-sdk/renpy/loader.py", line 548, in load
+    raise IOError("Couldn't find file '%s'." % name)
+IOError: Couldn't find file 'illurock.opus'.
+
+Linux-4.4.0-101-generic-x86_64-with-debian-stretch-sid
+Ren'Py 6.99.13.2919
+Hello 1.0

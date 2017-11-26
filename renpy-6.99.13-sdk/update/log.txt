@@ -1,0 +1,1 @@
+running ['/home/b/1/9_RenPy/renpy-6.99.13-sdk/lib/linux-x86_64/zsync', '-o', '/home/b/1/9_RenPy/renpy-6.99.13-sdk/update/editra-linux.update.new', '-k', '/home/b/1/9_RenPy/renpy-6.99.13-sdk/update/editra-linux.zsync', '-i', '/home/b/1/9_RenPy/renpy-6.99.13-sdk/update/editra-linux.update', 'http://update.renpy.org/6.99.13/renpy-6.99.13-editra-linux.zsync']
